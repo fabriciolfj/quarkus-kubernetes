@@ -33,3 +33,5 @@ mvn clean package -Dquarkus.container-image.build=true -Dquarkus.kubernetes.depl
       <artifactId>quarkus-kubernetes-config</artifactId>
     </dependency>
 ```
+
+- obs: para isso o quarkus utiliza o kubernetes client para localizar o configmap, mapeado no properties da aplicação.
