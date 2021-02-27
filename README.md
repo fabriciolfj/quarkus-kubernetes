@@ -9,7 +9,7 @@
 - Caso também queira implantar e executar um conteiner com a aplicação na sua instância local Kubernetes, precisa de activar a opção quarkus.kubernetes.deploy.
 - Caso seu kubernetes esteja na nuvem, precisa enviar a imagem para um registro remoto antes de ser implantado. Para isso ative a opção quarkus.container-image.push
 ```
- clean package -Dquarkus.container-image.build=true -Dquarkus.kubernetes.deploy=true -Dquarkus.container-image.push=true
+mvn clean package -Dquarkus.container-image.build=true -Dquarkus.kubernetes.deploy=true -Dquarkus.container-image.push=true
 ```
 
 ### Resultado
