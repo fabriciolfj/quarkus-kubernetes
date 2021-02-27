@@ -22,3 +22,14 @@ mvn clean package -Dquarkus.container-image.build=true -Dquarkus.kubernetes.depl
 - Injecta a referência ao postgres-config, definido em application.properties.
 - O nome da imagem é automaticamente criado. É baseado no artefacto Maven e na versão.
 - A definição de vivacidade e prontidão é gerada se o módulo Maven quarkus-smallrye-health estiver presente.
+
+
+### Configmap
+- com a extensão Kubernetes Config podemos usufruir do ConfigMap como fonte de configuração, sem ter de os montar na aplicação. Para utilizar essa extensão, precisamos de incluir a seguinte dependência Maven.
+
+```
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-kubernetes-config</artifactId>
+    </dependency>
+```
