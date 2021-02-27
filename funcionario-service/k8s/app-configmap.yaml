@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: funcionario-config
+data:
+  application.properties: |-
+    property1=test
